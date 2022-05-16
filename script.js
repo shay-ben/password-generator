@@ -1,4 +1,4 @@
-var generateBtn = document.querySelector("#generate");
+var generateButton = document.querySelector("#generate");
 generateBtn.addEventListener("click". writePassword);
 
 function writePassword() {
@@ -17,7 +17,7 @@ function generatePassword() {
   finalPassword = [""]
   endPassword = "",
 
-};
+}
 var passwordLength = math.floor( 
    prompt("How long do you want the password to be? Password must be between 8 to 128 characters");
 
@@ -37,7 +37,7 @@ if (number.NAN(passwordLength) && passwordLength >= 8 && passwordLength <=128){
 
  ){ 
 alert ("you have to choose at least one option!")
-var continue = confirm('Do you still want to gerate a password?"); 
+var continue = confirm('Do you still want to generate password?"); 
 if 
 
 
