@@ -20,15 +20,29 @@ generateBtn.addEventListener("click", writePassword);
 
 // Write password to the #password input
 function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
+  // to write a password your prompt must be either true or false 
+   prompts(); 
 
-  passwordText.value = password;
+   // if the prompts are given correctly you can generate a password 
+    if(prompts) {
+      var newPassword = generatePassword();
+      var passwordText = document.querySelector("#password");
 
+      passwordText.value = newPassword;
+    }
 }
 
-function generatePassword() {}
 
+function generatePassword() {
+  var password = ""; 
+  // create a loop for how ever long the character length based on user input 
+  for (var i = 0; i < characterLength; i++) {
+    var randomCharacter = math.floor(math.random() * characters.length); 
+    password = password + characters[randomCharacter]; 
+  }
+  return password;
+  // after this does a looop of users character length and random characters, this will return back to password - line 28 to generate a password 
+}
 
 //Prompts 
 function prompts() { 
