@@ -31,7 +31,7 @@ function generatePassword() {
     // create if statement in the case user does not pick between the length 
     if(isNaN(characterLength) || characterLength < 8 || characterLength > 128) {
       alert("Charater length must be between 8 and 128 Charaters! Please try again!"); 
-      return; 
+      return "Click Generate Password and try again!"; 
     }
     // if user picks between the character length, then - 
     if(confirm("Would you like lowercase letters in your password?")) {
